@@ -10,3 +10,6 @@ The build with Maven.
 ```shell
 mvn clean verify
 ```
+Note, the Tycho build is currently failing.
+https://bugs.eclipse.org/389698
+
