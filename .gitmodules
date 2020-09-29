@@ -1,0 +1,4 @@
+[submodule "4_17/jdt.core"]
+	path = 4_17/jdt.core
+	url = https://github.com/eclipseguru/eclipse.jdt.core.git
+	branch = gunnar/performance

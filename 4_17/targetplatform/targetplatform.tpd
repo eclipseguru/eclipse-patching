@@ -1,0 +1,32 @@
+target "eclipse-4-17" with source configurePhase requirements
+
+// full list of version here: https://projects.eclipse.org/releases/2020-09
+
+location "https://download.eclipse.org/eclipse/updates/4.17/" {
+    org.eclipse.e4.rcp.feature.group
+    org.eclipse.ecf.core.feature.feature.group
+    org.eclipse.ecf.core.ssl.feature.feature.group
+    org.eclipse.ecf.filetransfer.feature.feature.group
+    org.eclipse.ecf.filetransfer.httpclient45.feature.feature.group
+    org.eclipse.ecf.filetransfer.ssl.feature.feature.group
+    org.eclipse.emf.common.feature.group
+    org.eclipse.emf.ecore.feature.group
+    org.eclipse.equinox.sdk.feature.group
+    org.eclipse.equinox.p2.discovery.feature.feature.group
+    org.eclipse.rcp.feature.group
+    org.eclipse.rcp.sdk.id
+    org.eclipse.sdk.ide
+    org.eclipse.test.feature.group
+    org.eclipse.equinox.executable
+    org.eclipse.equinox.executable.feature.group
+    org.eclipse.jdt.feature.group
+    org.eclipse.sdk.feature.group
+    org.eclipse.platform.feature.group
+    org.eclipse.test
+    org.eclipse.jface.text.tests
+    org.eclipse.text.tests
+}
+
+location "https://download.eclipse.org/cbi/updates/license/" {
+    org.eclipse.license.feature.group
+}

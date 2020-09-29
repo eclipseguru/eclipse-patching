@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>eclipseguru.eclipse.patching.releng</groupId>
+    <artifactId>eclipse-patching-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../releng/mavenparent</relativePath>
+  </parent>
+
+  <groupId>eclipseguru.eclipse.patching.4_17</groupId>
+  <artifactId>eclipse-patching-4-17</artifactId>
+  <packaging>pom</packaging>
+
+  <build>
+    <plugins>
+      <plugin>
+        <!-- set target platform for all modules in this tree -->
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <configuration>
+          <target>
+            <!-- use target platform defined in releng/target-platforms Git repo -->
+            <artifact>
+              <groupId>eclipseguru.eclipse.patching.4_17</groupId>
+              <artifactId>targetplatform</artifactId>
+              <version>1.0.0-SNAPSHOT</version>
+            </artifact>
+          </target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <modules>
+    <module>features</module>
+    <module>p2repository</module>
+    <module>targetplatform</module>
+    
+    <!-- the patched plug-ins -->
+    <!-- if you comment this, things start working magically -->
+    <module>jdt.core/org.eclipse.jdt.core</module>
+  </modules>
+
+</project>

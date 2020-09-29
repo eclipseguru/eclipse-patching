@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde?>
+<!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
+<target name="eclipse-4-17" sequenceNumber="1601389708">
+  <locations>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+      <unit id="org.eclipse.e4.rcp.feature.group" version="4.17.0.v20200831-1002"/>
+      <unit id="org.eclipse.ecf.core.feature.feature.group" version="1.5.700.v20200812-2314"/>
+      <unit id="org.eclipse.ecf.core.ssl.feature.feature.group" version="1.1.500.v20200812-2314"/>
+      <unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="3.14.1400.v20200812-2314"/>
+      <unit id="org.eclipse.ecf.filetransfer.httpclient45.feature.feature.group" version="1.0.600.v20200816-1842"/>
+      <unit id="org.eclipse.ecf.filetransfer.ssl.feature.feature.group" version="1.1.400.v20200812-2314"/>
+      <unit id="org.eclipse.emf.common.feature.group" version="2.20.0.v20200822-0801"/>
+      <unit id="org.eclipse.emf.ecore.feature.group" version="2.23.0.v20200630-0516"/>
+      <unit id="org.eclipse.equinox.sdk.feature.group" version="3.20.300.v20200828-1034"/>
+      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.2.700.v20200705-1016"/>
+      <unit id="org.eclipse.rcp.feature.group" version="4.17.0.v20200902-1800"/>
+      <unit id="org.eclipse.rcp.sdk.id" version="4.17.0.I20200902-1800"/>
+      <unit id="org.eclipse.sdk.ide" version="4.17.0.I20200902-1800"/>
+      <unit id="org.eclipse.test.feature.group" version="3.7.1200.v20200828-0912"/>
+      <unit id="org.eclipse.equinox.executable" version="3.8.900.v20200819-0940"/>
+      <unit id="org.eclipse.equinox.executable.feature.group" version="3.8.900.v20200819-0940"/>
+      <unit id="org.eclipse.jdt.feature.group" version="3.18.500.v20200902-1800"/>
+      <unit id="org.eclipse.sdk.feature.group" version="4.17.0.v20200902-1800"/>
+      <unit id="org.eclipse.platform.feature.group" version="4.17.0.v20200902-1800"/>
+      <unit id="org.eclipse.test" version="3.4.600.v20200828-0912"/>
+      <unit id="org.eclipse.jface.text.tests" version="3.11.1200.v20200731-0931"/>
+      <unit id="org.eclipse.text.tests" version="3.12.700.v20200806-0736"/>
+      <repository location="https://download.eclipse.org/eclipse/updates/4.17/"/>
+    </location>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="true" type="InstallableUnit">
+      <unit id="org.eclipse.license.feature.group" version="2.0.2.v20181016-2210"/>
+      <repository location="https://download.eclipse.org/cbi/updates/license/"/>
+    </location>
+  </locations>
+</target>

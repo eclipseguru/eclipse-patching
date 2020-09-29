@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description url="https://github.com/eclipseguru/eclipse-patching/">
+      Eclipse Patching Infrastructure for Eclipse 4.17
+   </description>
+   <feature id="eclipseguru.eclipse.patches.4_17.jdt" version="0.0.0">
+      <category name="eclipse-patches-4_17"/>
+   </feature>
+   <category-def name="eclipse-patches-4_17" label="Patches for Eclipse 4.17">
+      <description>
+         All patches for Eclipse 4.17. Do NOT install in any other Eclipse version.
+      </description>
+   </category-def>
+
+   <!-- dependencies which should be included but not made visible-->
+   
+   <!-- why is this needed? this should be needed -->
+   <!-- <iu id="org.eclipse.jdt.feature.group" version="3.18.500.v20200902-1800"/> -->
+   
+   <!-- 
+   
+   this shouldn't be needed, too
+   
+   It doesn't help anyway. The feature above complains that this version is missing.
+   It *is* in the target platform.
+   
+   -->
+   <!--<iu id="org.eclipse.jdt.core" version="3.23.0.v20200828-0941" />-->
+</site>
